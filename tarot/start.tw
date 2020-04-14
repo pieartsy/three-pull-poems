@@ -7,9 +7,17 @@
 @@.column;<h2>End</h2>@@
 </div>\
 <div class="row">
-@@.card.column;$card1.img@@
-@@.card.column;$card2.img@@
-@@.card.column;$card3.img@@</div>
+@@.card.column;$spread[0].img@@
+@@.card.column;$spread[1].img@@
+@@.card.column;$spread[2].img@@
+</div>\
+<div class="row">
+@@.column;<<poem "0" "_card.first">>@@
+@@.column;<<poem "1" "_card.second">>@@
+@@.column;<<poem "2" "_card.third">>@@
+</div>
+<h2>[[Draw again|Start]]</h2>
+
 
 ::StoryTitle
 Tarot
