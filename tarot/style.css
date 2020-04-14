@@ -8,10 +8,24 @@ h5,
 h6 {
     font-family: 'Courgette', cursive;
     text-align: center;
+    margin: .5rem;
+}
+
+h1,
+.h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+  text-align: center;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-image: [img[cloth]];
 }
 
 .cardgap {
@@ -32,6 +46,7 @@ img {
   
 .column {
     flex: 33.33%;
-    padding: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
     text-align: center;
 }
