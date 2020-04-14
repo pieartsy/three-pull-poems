@@ -1,0 +1,1611 @@
+:: Stylesheet 1 [stylesheet]
+@import
+ 
+url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Serif&display=swap');
+
+#imgloader-box{position:fixed;left:0;top:0;width:2px;height:2px;overflow:hidden;z-index:0}
+
+#imgloader-box
+ img{position:absolute;left:0;top:0;width:1px;height:1px}
+
+body 
+{
+background-color: #1C0117;
+}
+
+#calendar {
+background-image: 
+url('icons/kaleid.png');
+border-width: 3px;
+border-style: 
+solid;
+border-image: 
+    linear-gradient(
+      to bottom, 
+      
+#AF1548, 
+      greenyellow
+    ) 1 100%;
+width: 75%;
+min-height: 
+100%;
+position: absolute;
+top: -5px;
+left: 12%;
+}
+
+#cardRow1, 
+#cardRow2, #cardRow3, #cardRow4 {
+width: 80%;
+border: 
+none;
+margin-left: 12%;
+}
+
+.card {
+display: inline-block;
+width: 
+23%;
+text-align: center;
+box-shadow: 0 0 20px 15px rgba(255, 255, 255,
+ .1);
+}
+
+.cardAlt {
+display: inline-block;
+width: 23%;
+text-align:
+ center;
+}
+
+.label {
+display: inline-block;
+width: 
+23%;
+text-align: center;
+background-color: rgba(0,0,0, 
+.5);
+box-shadow: 0 0 20px 15px rgba(0,0,0, .5);
+font-size: 
+1.3em;
+line-height: 50px;
+}
+
+.label img {
+width: 50px;
+float: 
+left;
+}
+
+.cardgap {
+display: inline-block;
+width: 13%;
+}
+
+.card 
+img {
+max-width: 100%;
+height: auto;
+width: auto;
+border: 3px solid 
+black;
+box-shadow: 10px 8px 5px 1px rgba(0, 0, 0, .7);
+}
+
+.cardAlt 
+img {
+max-width: 100%;
+height: auto;
+width: auto;
+}
+
+.card 
+img:hover {
+box-shadow: 10px 8px 5px 1px rgba(0, 0, 0, 
+.5);
+}
+
+.passage a {
+}
+
+.passage a:hover {
+}
+
+#ui-bar 
+{
+display: none;
+}
+
+#ui-dialog-close {
+display: 
+none;
+}
+
+#ui-dialog-titlebar {
+background-color: 
+#5E3344;
+font-family: 'PT Serif', serif;
+height: auto;
+line-height: 
+190%;
+padding: 0 0 0 50%;
+}
+
+#ui-dialog {
+width: 60%;
+height: 
+92%;
+background-color: #2A1332;
+font-family: 'Open Sans', 
+sans-serif;
+}
+
+#ui-dialog-body {
+border: 3px solid 
+#5E3344;
+}
+
+.profile {
+float: left;
+display: inline-block;
+width: 
+49%;
+}
+
+.profile img {
+margin-left: 5%;
+max-width: 90%;
+width: 
+auto;
+height: auto;
+}
+
+.description {
+float: right;
+display: 
+inline-block;
+width: 49%;
+padding-right: 10px;
+}
+
+.description img 
+{
+height: 50px;
+width: auto;
+margin-left: 40%;
+}
+
+#ui-dialog-body 
+hr {
+background-color: #5E3344;
+border: 1px solid #5E3344;
+width: 
+80%;
+margin-left: 10%;
+}
+
+.fa {
+color: #DAAE81;
+}
+
+#title 
+{
+font-family: 'PT Serif', serif;
+font-size: 2.5em;
+text-align: 
+center;
+margin-top: 3%;
+}
+
+#return {
+font-family: 'PT Serif', 
+serif;
+font-size: 1.8em;
+text-align: center;
+}
+
+#return a, .label a
+ {
+color: white;
+text-decoration: underline;
+}
+
+#return a:hover, 
+.label a:hover {
+text-decoration: none;
+}
+
+
+:: Start2
+<div
+ id="calendar"><div id="title">The Tyrot 
+Deck</div>
+\<div id="cardRow1">
+<div 
+class='card'></div>
+\<div class="cardgap"></div> 
+
+\<div class='cardAlt'><<include `either("star", 
+"boy")`>></div>
+\<div class="cardgap"></div> 
+
+\<div class='card'></div>
+</div>
+
+<div 
+id="cardRow1">
+<div class='label'>[[Cards by 
+month|actual]]</div>
+\<div class="cardgap"></div> 
+
+\<div class='label'>[[Cards by 
+type|organized]]
+</div>
+\<div 
+class="cardgap"></div> 
+\<div class='label'>[[Get a 
+reading|drawing cards]]</div>
+</div>
+
+
+:: organized
+<div
+ id="calendar"><div id="title">Cards by 
+Type</div>
+<div id="cardRow1">\
+<div 
+class='label'></div>
+\<div class="cardgap"></div>
+ 
+\<div class='label'><img src='icons/need.png' /> Cards 
+of Need</div>
+\<div class="cardgap"></div> 
+
+\<div class='label'></div>
+</div>
+<div 
+id="cardRow1">\
+<div class='card'><<click "<img 
+src='small/month1.png' />">>\
+	<<dialog 
+"January">>\
+		<<include 
+"January">>
+	<</dialog>>
+<</click>></div>
+\<div
+ class="cardgap"></div> 
+\<div 
+class="card"><<click "<img src='small/month3.png' 
+/>">>\
+	<<dialog 
+"March">>\
+		<<include 
+"March">>
+	<</dialog>>
+<</click>></div>
+ 
+\<div class="cardgap"></div> 
+\<div 
+class="card"><<click "<img src='small/month11.png' 
+/>">>\
+	<<dialog 
+"November">>\
+		<<include 
+"November">>
+	<</dialog>>
+<</click>></div>
+ 
+</div>
+
+<div id="cardRow1">\
+<div 
+class='label'></div>
+\<div class="cardgap"></div>
+ 
+\<div class='label'><img src='icons/life.png' /> Cards 
+of Life</div>
+\<div class="cardgap"></div> 
+
+\<div class='label'></div>
+</div>
+<div 
+id="cardRow1">
+\<div class="card"><<click "<img 
+src='small/month5.png' />">>\
+	<<dialog 
+"May">>\
+		<<include 
+"May">>
+	<</dialog>>
+<</click>></div>
+ 
+\<div class="cardgap"></div> 
+\<div 
+class='card'><<click "<img src='small/month7.png' 
+/>">>\
+	<<dialog "July">>\
+		<<include
+ 
+"July">>
+	<</dialog>>
+<</click>></div>
+\<div
+ class="cardgap"></div> 
+\<div 
+class='card'><<click "<img src='small/month10.png' 
+/>">>\
+	<<dialog 
+"October">>\
+		<<include 
+"October">>
+	<</dialog>>
+<</click>></div>
+ 
+</div>
+
+<div id="cardRow1">\
+<div 
+class='label'></div>
+\<div class="cardgap"></div>
+ 
+\<div class='label'><img src='icons/others.png' /> Cards
+ of Others</div>
+\<div class="cardgap"></div> 
+
+\<div class='label'></div>
+</div>
+<div 
+id="cardRow1">\
+\<div class="card"><<click "<img 
+src='small/month2.png' />">>\
+	<<dialog 
+"February">>\
+		<<include 
+"February">>
+	<</dialog>>
+<</click>></div>
+ 
+\<div class="cardgap"></div> 
+\<div 
+class="card"><<click "<img src='small/month4.png' 
+/>">>\
+	<<dialog 
+"April">>\
+		<<include 
+"April">>
+	<</dialog>>
+<</click>></div>
+ 
+\<div class="cardgap"></div> 
+\<div 
+class="card"><<click "<img src='small/month9.png' 
+/>">>\
+	<<dialog 
+"September">>\
+		<<include 
+"September">>
+	<</dialog>>
+<</click>></div>
+ 
+</div>
+
+<div id="cardRow1">\
+<div 
+class='label'></div>
+\<div class="cardgap"></div>
+ 
+\<div class='label'><img src='icons/self.png' /> Cards 
+of Self</div>
+\<div class="cardgap"></div> 
+
+\<div class='label'></div>
+</div>
+<div 
+id="cardRow1">
+\<div class="card"><<click "<img 
+src='small/month6.png' />">>\
+	<<dialog 
+"June">>\
+		<<include 
+"June">>
+	<</dialog>>
+<</click>></div>
+ 
+\<div class="cardgap"></div> 
+\<div 
+class="card"><<click "<img src='small/month8.png' 
+/>">>\
+	<<dialog 
+"August">>\
+		<<include 
+"August">>
+	<</dialog>>
+<</click>></div>
+ 
+\<div class="cardgap"></div> 
+\<div 
+class="card"><<click "<img src='small/month12.png' 
+/>">>\
+	<<dialog 
+"December">>\
+		<<include 
+"December">>
+	<</dialog>>
+<</click>></div>
+ 
+</div>
+
+<div id="return">[[Get a reading|drawing 
+cards]] or [[Go back|Start2]]</div>
+</div>
+
+
+:: Start
+<div
+ id="calendar"><<timedinsert 2s>><div 
+id="title">[[The Tyrot 
+Deck|Start2]]</div><</timedinsert>></div>
+
+
+:: dialog and popup Chapel [script]
+//
+ dialog-api-macro-set.min.js, for SugarCube 2, by 
+Chapel
+;Macro.add("dialog",{tags:["onopen","onclose"],handler:function(){var
+ 
+n="",o=null,e=null,t=0<this.args.length?this.args[0]:"",s=1<this.args.length?this.args.slice(1).flatten():[];this.payload.forEach(function(t,s){0===s?n=t.contents:"onopen"===t.name?o=o?o+t.contents:t.contents:e=e?e+t.contents:t.contents}),s.push("macro-"+this.name),Dialog.setup(t,s.join("
+ ")),Dialog.wiki(n),o&&"string"==typeof 
+o&&o.trim()&&$(document).one(":dialogopened",function(){$.wiki(o)}),e&&"string"==typeof
+ 
+e&&e.trim()&&$(document).one(":dialogclosed",function(){$.wiki(e)}),Dialog.open()}}),Macro.add("popup",{handler:function(){if(this.args.length<1)return
+ this.error("need at least one argument; the passage to 
+display");if(!Story.has(this.args[0]))return this.error("the passage 
+"+this.args[0]+"does not exist");var 
+t=this.args[0],s=1<this.args.length?this.args[1]:"",n=2<this.args.length?this.args.slice(2).flatten():[];n.push("macro-"+this.name),Dialog.setup(s,n.join("
+ 
+")),Dialog.wiki(Story.get(t).processText()),Dialog.open()}}),Macro.add("dialogclose",{skipArgs:!0,handler:function(){Dialog.close()}});
+//
+ end dialog-api-macro-set.min.js
+
+
+:: March
+<div
+ class="profile">
+	\<img src="large/month3.png" 
+/>
+	\</div>
+\<div class="description">
+<img 
+src="icons/3.png" />
+
+A card of emotional need. Morning frost, 
+afternoon swelter, evening rain -- the inconstance of 
+March.
+
+<hr>
+
+Upright, this card is a ticking time bomb. 
+Tension, agitation, exhilaration, frustration -- whether negative or 
+positive, your impending explosion has ample charge. If you're wound too
+ tight, defusal may no longer be an option. Prepare for 
+shrapnel.
+
+Reversed, Ty indicates emotional understimulation. You may 
+feel restless, fatigued, uninterested in hobbies, and disconnected from 
+others. What has clogged your heart? What has dulled your eyes? Do not 
+dismiss this feeling as mere boredom. If left alone, spite will breed 
+here like mold beneath the floorboards.
+
+<img src="icons/need.png" 
+/>
+</div>
+
+
+:: August
+<div
+ class="profile">
+	\<img src="large/month8.png" 
+/>
+	\</div>
+\<div class="description">
+<img 
+src="icons/8.png" />
+
+A card of contented selfhood. All roads lead 
+to the same horizon; all stars shine hot in the same sticky 
+night.
+
+<hr>
+
+You have been questioning yourself and the 
+direction of your life, considering radical change. Spurn suggestions 
+and turn inward: everything you need is already within.
+
+Upright, Star
+ advises nothing but what you are already doing. Be true to yourself; 
+ignore your doubts and those of others. Know that you are enough, just 
+as you are, to accomplish your goals.
+
+Reversed, Star indicates that 
+you may have lost track of your self. Dig beneath the surface of 
+whatever persona you have created and realize your true self, your true 
+strengths and desires.
+
+<img src="icons/self.png" 
+/>
+</div>
+
+
+:: May
+<div
+ class="profile">
+	\<img src="large/month5.png" 
+/>
+	\</div>
+\<div class="description">
+<img 
+src="icons/5.png" />
+
+A card of decision and risk. May blooms 
+bright with dazzling fruits, but not all are as sweet as they 
+seem.
+
+<hr>
+
+Upright, Red Bird encourages self-confidence and 
+risk-taking. Cast aside doubts, and seize the opportunity you're 
+considering. Your soul knows better than your mind what you crave. Your 
+choice will come at a cost, but your pleasure and riches will outweigh 
+what you lose.
+
+Reversed, Red Bird warns against impulsivity. Look 
+more closely: the deal may be good today, but what of next year? Actions
+ have consequences; other people have their own motives. Slow down and 
+conduct research on what you want. Some opportunities may be sound, but 
+they require scrutiny and negotiation to reap the full 
+benefit.
+
+<img src="icons/life.png" />
+</div>
+
+
+:: June
+<div
+ class="profile">
+	\<img src="large/month6.png" 
+/>
+	\</div>
+\<div class="description">
+<img 
+src="icons/6.png" />
+
+A card of humble selfhood. The ascending sun 
+of June seeks out new crevices to heal and fill with 
+light.
+
+<hr>
+
+Upright, Starsinger heralds a period of growth. 
+You are in a place to learn from others and improve yourself. Be humble;
+ be quiet and observe those around you; expose yourself to new mindsets 
+and practices.
+
+Reversed, Starsinger represents the chance to teach. 
+Though you may not be aware of it, eager eyes are upon you, so act your 
+best self and embody your virtues. Your behavior will shape someone as 
+you were once shaped.
+
+In both positions, be mindful of the mutuality 
+of roles. Teachers also learn, and students teach.
+
+<img 
+src="icons/self.png" />
+</div>
+
+
+:: drawing cards
+<div
+ id="calendar"><div id="title">Three Card 
+Reading</div>
+<<include "reset">>
+<div 
+id="cardRow1">\
+<div 
+class='label'>Past</div>
+\<div 
+class="cardgap"></div> 
+\<div 
+class='label'>Present</div>
+\<div 
+class="cardgap"></div> 
+\<div 
+class='label'>Future</div>
+</div>
+<div 
+id="cardRow1">\
+<div class='card'><<click 
+"$card1.img">>\
+	<<dialog 
+$card1.name>>\
+		<<include 
+$card1.name>>
+	<</dialog>>
+<</click>></div>
+\<div
+ class="cardgap"></div> 
+\<div 
+class='card'><<click "$card2.img">>\
+	<<dialog 
+$card2.name>>\
+		<<include 
+$card2.name>>
+	<</dialog>>
+<</click>></div>
+\<div
+ class="cardgap"></div> 
+\<div class='card'> 
+<<click "$card3.img">>\
+	<<dialog 
+$card3.name>>\
+		<<include 
+$card3.name>>
+	<</dialog>>
+<</click>></div>
+</div>
+
+
+<div
+ id="return">[[Again|drawing cards]] or [[Go 
+back|Start2]]</div>
+</div>
+
+
+:: mouseover Chapel [script]
+//
+ mouseover.min.js, for SugarCube 2, by 
+Chapel
+;Macro.add("mouseover",{tags:["onhover","onmouseover","onmousein","onmouseenter","onmouseout"],skipArgs:!0,handler:function(){if(this.payload.length<2)return
+ this.error("No event tag used.");var 
+o={mouseover:[],mousein:[],mouseout:[]},e=$(document.createElement("span")).addClass("macro-"+this.name).wiki(this.payload[0].contents).appendTo(this.output);this.payload.forEach(function(e){switch(e.name){case"onhover":case"onmouseover":o.mouseover.push(e.contents);break;case"onmousein":case"onmouseenter":o.mousein.push(e.contents);break;case"onmouseout":o.mouseout.push(e.contents);break;default:return}}),o.mouseover.length&&e.on("mouseover",this.createShadowWrapper(function(e){$.wiki(o.mouseover.join("
+ 
+"))})),o.mousein.length&&e.on("mouseenter",this.createShadowWrapper(function(e){$.wiki(o.mousein.join("
+ 
+"))})),o.mouseout.length&&e.on("mouseout",this.createShadowWrapper(function(e){$.wiki(o.mouseout.join("
+ "))}))}});
+// end mouseover.min.js
+
+
+:: StoryTitle
+tyrot
+
+
+:: July
+<div
+ class="profile">
+	\<img src="large/month7.png" 
+/>
+	\</div>
+\<div class="description">
+<img 
+src="icons/7.png" />
+
+A card of decision and commitment. July's 
+heat ripples through hourless afternoons. Time passes without 
+you.
+
+<hr>
+
+Both positions identify overcommitment as the 
+issue: you have too little time and resources reserved for 
+yourself.
+
+Upright, Ajana represents a hyperfixation. You have poured 
+an undue amount of attention into something -- or someone -- that does 
+not require it. Ask yourself what would happen if you gave less and kept
+ more.
+
+Reversed, Ajana sees the opposite: your energies are 
+fragmented across too many demands. Prioritize the most urgent -- or 
+better yet, delegate. If people knew of your struggles, they would 
+gladly step in to ease them.
+
+<img src="icons/life.png" 
+/>
+</div>
+
+
+:: February
+<div
+ class="profile">
+	\<img src="large/month2.png" 
+/>
+	\</div>
+\<div class="description">
+<img 
+src="icons/2.png" />
+
+A card of yearning for others. In the midst 
+of February's brittle exhaustion flickers a solitary red spark of 
+passion.
+ 
+<hr>
+
+Upright, Michael suggests an undue eagerness,
+ an oversharing with others. You have become vulnerable: untrustworthy 
+acquaintances know too much, and close friends are pushed to the limits 
+of patience. Reconsider your boundaries; shore up the walls of your 
+self.
+
+Reversed, this card indicates that your walls have grown too 
+tall. You cannot see out; others cannot see in. You may still be eager 
+for company, but frustrated by its shallowness. Don't wait for others to
+ deepen it. Be bold and remember: you do not lose the parts of your self
+ that you share with others.
+
+<img src="icons/others.png" 
+/>
+</div>
+
+
+:: October
+<div
+ class="profile">
+	\<img src="large/month10.png" 
+/>
+	\</div>
+\<div class="description">
+<img 
+src="icons/10.png" />
+
+A card of decision and environment. The 
+nights come alive in October; the leaves whisper and 
+beckon.
+
+<hr>
+
+Upright, Czarny implies that something in your 
+physical surroundings is impeding your progress and constraining your 
+options. Are you clinging to clutter? Have you put off necessary 
+repairs? Eaten nothing but cake today? You have been in your head and 
+heart too long and neglected your body's needs.
+
+Reversed, Czarny is a
+ card at peace. Nothing is perfect, but this is good enough for now – so
+ be grateful, and delight in where you are and what you've earned. 
+Ambition may drive progress, but accomplishments mean nothing if they do
+ not bring you joy.
+
+<img src="icons/life.png" />
+</div>
+
+
+:: star
+<img src='icons/star.png' />
+
+
+:: January
+<div
+ class="profile">
+	\<img src="large/month1.png" 
+/>
+	\</div>
+\<div class="description">
+<img 
+src="icons/1.png" />
+
+A card of professional and financial need. 
+The new year brings the opportunity to reconsider and realign 
+goals.
+
+<hr>
+
+Upright, Resonator suggests maintaining pace in 
+one's current work. Money may be tight, but better to stay the course 
+and persevere until conditions improve. Be patient and wait for your 
+investments to mature.
+
+Reversed, Resonator advises a change in tack. 
+Seek exterior opportunities; diversify your investments; consider a 
+change in career or a request for promotion. The time is ripe for 
+change.
+
+Above all, be frugal. Whether upright or reversed, this card 
+indicates the need for strategic financial decisions.
+
+<img 
+src="icons/need.png" />
+</div>
+
+
+:: April
+<div
+ class="profile">
+	\<img src="large/month4.png" 
+/>
+	\</div>
+\<div class="description">
+<img 
+src="icons/4.png" />
+
+A card of struggle with others. Bees fuzz and
+ drone through the lulling warmth of April, mild until 
+provoked.
+
+<hr>
+
+Upright, Simon warns that you have fallen 
+under the sway of someone who does not mean you well. Are they kind, or 
+only when you please them? A hand at your back now will be a grip around
+ your wrist later. The sooner you identify the negative influence, the 
+sooner you should cut ties with them – or unspool the rope to a safer 
+distance.
+
+Reversed, your hand is the one that has tightened around 
+another's. What do you fear, that you have bound them so tightly to you?
+ The bindings will abrade and strangle you both if not loosened soon. 
+Remember that there are happier ways to join two people.
+
+<img 
+src="icons/others.png" />
+</div>
+
+
+:: November
+<div
+ class="profile">
+	\<img src="large/month11.png" 
+/>
+	\</div>
+\<div class="description">
+<img 
+src="icons/11.png" />
+
+A card of social need. November presses its 
+chilly hands against window panes, and the wind moans for a 
+home.
+
+<hr>
+
+In both positions, Tyrian recognizes a moment of 
+dire vulnerability -- you should not be alone now.
+
+Upright, this card
+ advises you to rekindle past connections and return to old haunts. But 
+keep a tight rein on nostalgia: you are meeting with others to walk the 
+path of the future, not to retread past memories.
+
+Reversed, Tyrian 
+urges you to look outside your network and listen to new voices. Your 
+current company cannot provide you with everything you need, even if 
+they wanted to -- which seems unlikely.
+
+<img src="icons/need.png" 
+/>
+</div>
+
+
+:: reset
+<<silently>>
+<<set
+ 
+
+$one to [
+{ name: "January", img: "<img src='small/month1.png' 
+/>", text: "jan"},
+{ name: "January", img: "<img 
+src='reversed/month1.png' />", text: "jan"}
+]
+
+$two to [
+{ name: 
+"February", img: "<img src='small/month2.png' />", text: 
+"jan"},
+{ name: "February", img: "<img src='reversed/month2.png' 
+/>", text: "jan"}
+]
+
+$three to [
+{ name: "March", img: "<img 
+src='small/month3.png' />", text: "jan"},
+{ name: "March", img: 
+"<img src='reversed/month3.png' />", text: "jan"}
+]
+
+$four to 
+[
+{ name: "April", img: "<img src='small/month4.png' />", text: 
+"jan"},
+{ name: "April", img: "<img src='reversed/month4.png' 
+/>", text: "jan"}
+]
+
+$five to [
+{ name: "May", img: "<img 
+src='small/month5.png' />", text: "jan"},
+{ name: "May", img: 
+"<img src='reversed/month5.png' />", text: "jan"}
+]
+
+$six to 
+[
+{ name: "June", img: "<img src='small/month6.png' />", text: 
+"jan"},
+{ name: "June", img: "<img src='reversed/month6.png' />",
+ text: "jan"}
+]
+
+$seven to [
+{ name: "July", img: "<img 
+src='small/month7.png' />", text: "jan"},
+{ name: "July", img: 
+"<img src='reversed/month7.png' />", text: "jan"}
+]
+
+$eight to 
+[
+{ name: "August", img: "<img src='small/month8.png' />", text: 
+"jan"},
+{ name: "August", img: "<img src='reversed/month8.png' 
+/>", text: "jan"}
+]
+
+$nine to [
+{ name: "September", img: 
+"<img src='small/month9.png' />", text: "jan"},
+{ name: 
+"September", img: "<img src='reversed/month9.png' />", text: 
+"jan"}
+]
+
+$ten to [
+{ name: "October", img: "<img 
+src='small/month10.png' />", text: "jan"},
+{ name: "October", img: 
+"<img src='reversed/month10.png' />", text: "jan"}
+]
+
+$eleven 
+to [
+{ name: "November", img: "<img src='small/month11.png' />", 
+text: "jan"},
+{ name: "November", img: "<img 
+src='reversed/month11.png' />", text: "jan"}
+]
+
+$twelve to [
+{ 
+name: "December", img: "<img src='small/month12.png' />", text: 
+"jan"},
+{ name: "December", img: "<img src='reversed/month12.png' 
+/>", text: "jan"}
+]
+
+$cards to ""
+
+$cardDeck to 
+""
+
+>>
+
+<<set $cardDeck to [$one.pluck(), $two.pluck(), 
+$three.pluck(), $four.pluck(), $five.pluck(), $six.pluck(), 
+$seven.pluck(), $eight.pluck(), $nine.pluck(), $ten.pluck(), 
+$eleven.pluck(), $twelve.pluck()]>>
+
+<<set $cards to 
+$cardDeck.shuffle()>>
+
+<<set $card1 to 
+$cards.pluck()>><<set $card2 to 
+$cards.pluck()>><<set $card3 to 
+$cards.pluck()>>
+
+<</silently>>
+
+
+:: boy
+<img src='icons/boy.png' />
+
+
+:: actual
+<div
+ id="calendar"><div id="title">The Deck</div>
+<div 
+id="cardRow1">\
+<div class='card'><<click "<img 
+src='small/month1.png' />">>\
+	<<dialog 
+"January">>\
+		<<include 
+"January">>
+	<<onopen>>
+		<<audio 'click' 
+volume 1 play>>
+	<<onclose>>
+		<<audio 
+'close' volume 1 
+play>>
+	<</dialog>>
+<</click>></div>
+\<div
+ class="cardgap"></div> 
+\<div 
+class="card"><<click "<img src='small/month2.png' 
+/>">>\
+	<<dialog 
+"February">>\
+		<<include 
+"February">>
+	<<onopen>>
+		<<audio 'click' 
+volume 1 play>>
+	<<onclose>>
+		<<audio 
+'close' volume 1 
+play>>
+	<</dialog>>
+<</click>></div>
+ 
+\<div class="cardgap"></div> 
+\<div 
+class="card"><<click "<img src='small/month3.png' 
+/>">>\
+	<<dialog 
+"March">>\
+		<<include 
+"March">>
+	<<onopen>>
+		<<audio 'click' 
+volume 1 play>>
+	<<onclose>>
+		<<audio 
+'close' volume 1 
+play>>
+	<</dialog>>
+<</click>></div>
+ 
+</div>
+
+<div id="cardRow1">\
+<<click "<div 
+class='card'><img src='small/month4.png' 
+/></div>">>\
+	<<dialog 
+"April">>\
+		<<include 
+"April">>
+	<<onopen>>
+		<<audio 'click' 
+volume 1 play>>
+	<<onclose>>
+		<<audio 
+'close' volume 1 
+play>>
+	<</dialog>>
+<</click>>
+\<div
+ class="cardgap"></div> 
+\<div 
+class="card"><<click "<img src='small/month5.png' 
+/>">>\
+	<<dialog "May">>\
+		<<include 
+"May">>
+	<<onopen>>
+		<<audio 'click' 
+volume 1 play>>
+	<<onclose>>
+		<<audio 
+'close' volume 1 
+play>>
+	<</dialog>>
+<</click>></div>
+ 
+\<div class="cardgap"></div> 
+\<div 
+class="card"><<click "<img src='small/month6.png' 
+/>">>\
+	<<dialog "June">>\
+		<<include
+ "June">>
+	<<onopen>>
+		<<audio 'click' 
+volume 1 play>>
+	<<onclose>>
+		<<audio 
+'close' volume 1 
+play>>
+	<</dialog>>
+<</click>></div>
+ 
+</div>
+
+<div id="cardRow1">\
+<<click "<div 
+class='card'><img src='small/month7.png' 
+/></div>">>\
+	<<dialog 
+"July">>\
+		<<include 
+"July">>
+	<<onopen>>
+		<<audio 'click' 
+volume 1 play>>
+	<<onclose>>
+		<<audio 
+'close' volume 1 
+play>>
+	<</dialog>>
+<</click>>
+\<div
+ class="cardgap"></div> 
+\<div 
+class="card"><<click "<img src='small/month8.png' 
+/>">>\
+	<<dialog 
+"August">>\
+		<<include 
+"August">>
+	<<onopen>>
+		<<audio 'click' 
+volume 1 play>>
+	<<onclose>>
+		<<audio 
+'close' volume 1 
+play>>
+	<</dialog>>
+<</click>></div>
+ 
+\<div class="cardgap"></div> 
+\<div 
+class="card"><<click "<img src='small/month9.png' 
+/>">>\
+	<<dialog 
+"September">>\
+		<<include 
+"September">>
+	<<onopen>>
+		<<audio 'click'
+ volume 1 play>>
+	<<onclose>>
+		<<audio 
+'close' volume 1 
+play>>
+	<</dialog>>
+<</click>></div>
+ 
+</div>
+
+<div id="cardRow1">\
+<<click "<div 
+class='card'><img src='small/month10.png' 
+/></div>">>\
+	<<dialog 
+"October">>\
+		<<include 
+"October">>
+	<<onopen>>
+		<<audio 'click' 
+volume 1 play>>
+	<<onclose>>
+		<<audio 
+'close' volume 1 
+play>>
+	<</dialog>>
+<</click>>
+\<div
+ class="cardgap"></div> 
+\<div 
+class="card"><<click "<img src='small/month11.png' 
+/>">>\
+	<<dialog 
+"November">>\
+		<<include 
+"November">>
+	<<onopen>>
+		<<audio 'click' 
+volume 1 play>>
+	<<onclose>>
+		<<audio 
+'close' volume 1 
+play>>
+	<</dialog>>
+<</click>></div>
+ 
+\<div class="cardgap"></div> 
+\<div 
+class="card"><<click "<img src='small/month12.png' 
+/>">>\
+	<<dialog 
+"December">>\
+		<<include 
+"December">>
+	<<onopen>>
+		<<audio 'click' 
+volume 1 play>>
+	<<onclose>>
+		<<audio 
+'close' volume 1 
+play>>
+	<</dialog>>
+<</click>></div>
+ 
+</div>
+
+<div id="return">[[Get a reading|drawing 
+cards]] or [[Go back|Start2]]</div>
+</div>
+
+
+:: September
+<div
+ class="profile">
+	\<img src="large/month9.png" 
+/>
+	\</div>
+\<div class="description">
+<img 
+src="icons/9.png" />
+
+A card of grievance with others. September 
+struggles to shed its blistered coat and take up the bruises of 
+autumn.
+
+<hr>
+
+Upright, Booth speaks to a recent transgression
+ – whether you think it wrong or not, the other party certainly does. 
+Swallow your pride and reconcile with them. If you reach out now, your 
+peace offer will be accepted and the offense forgotten. Delay, and the 
+waters waiting behind the dam will only swell higher.
+
+Reversed, Booth
+ acknowledges that you are the one nursing a wound. Let bygones be 
+bygones. If someone comes to you with contrition, accept; even if they 
+do not, forgive what you can and treat them as you once did. If you 
+continue to pick at this wound, it will scar.
+
+<img 
+src="icons/others.png" />
+</div>
+
+
+:: December
+<div
+ class="profile">
+	\<img src="large/month12.png" 
+/>
+	\</div>
+\<div class="description">
+<img 
+src="icons/12.png" />
+
+A card of reflective selfhood. The month of 
+last moments. Starlight rings silverly through the barren 
+nights.
+
+<hr>
+
+Upright, January calls for solitude. You have 
+not acted as kindly as you could, have not honored your duties. What 
+prevents you from being better than you are? Strip away the excuses and 
+sit alone with your truth. When your heart beats in the silence, what 
+song do you hear?
+
+Reversed, January senses that you have been gone 
+too long. Your punishment has run its course; if you have not yet been 
+forgiven for the sin that jailed you here, the fault lies with the 
+priest. Cast off your veil of self-absorption and return now to the 
+world with clear eyes, well-rested.
+
+<img src="icons/self.png" 
+/>
+</div>
+
+
+:: StoryInit
+<<set
+ 
+
+$one to [
+{ name: "January", img: "<img src='small/month1.png' 
+/>", text: "jan"},
+{ name: "January", img: "<img 
+src='reversed/month1.png' />", text: "jan"}
+]
+
+$two to [
+{ name: 
+"February", img: "<img src='small/month2.png' />", text: 
+"jan"},
+{ name: "February", img: "<img src='reversed/month2.png' 
+/>", text: "jan"}
+]
+
+$three to [
+{ name: "March", img: "<img 
+src='small/month3.png' />", text: "jan"},
+{ name: "March", img: 
+"<img src='reversed/month3.png' />", text: "jan"}
+]
+
+$four to 
+[
+{ name: "April", img: "<img src='small/month4.png' />", text: 
+"jan"},
+{ name: "April", img: "<img src='reversed/month4.png' 
+/>", text: "jan"}
+]
+
+$five to [
+{ name: "May", img: "<img 
+src='small/month5.png' />", text: "jan"},
+{ name: "May", img: 
+"<img src='reversed/month5.png' />", text: "jan"}
+]
+
+$six to 
+[
+{ name: "June", img: "<img src='small/month6.png' />", text: 
+"jan"},
+{ name: "June", img: "<img src='reversed/month6.png' />",
+ text: "jan"}
+]
+
+$seven to [
+{ name: "July", img: "<img 
+src='small/month7.png' />", text: "jan"},
+{ name: "July", img: 
+"<img src='reversed/month7.png' />", text: "jan"}
+]
+
+$eight to 
+[
+{ name: "August", img: "<img src='small/month8.png' />", text: 
+"jan"},
+{ name: "August", img: "<img src='reversed/month8.png' 
+/>", text: "jan"}
+]
+
+$nine to [
+{ name: "September", img: 
+"<img src='small/month9.png' />", text: "jan"},
+{ name: 
+"September", img: "<img src='reversed/month9.png' />", text: 
+"jan"}
+]
+
+$ten to [
+{ name: "October", img: "<img 
+src='small/month10.png' />", text: "jan"},
+{ name: "October", img: 
+"<img src='reversed/month10.png' />", text: "jan"}
+]
+
+$eleven 
+to [
+{ name: "November", img: "<img src='small/month11.png' />", 
+text: "jan"},
+{ name: "November", img: "<img 
+src='reversed/month11.png' />", text: "jan"}
+]
+
+$twelve to [
+{ 
+name: "December", img: "<img src='small/month12.png' />", text: 
+"jan"},
+{ name: "December", img: "<img src='reversed/month12.png' 
+/>", text: "jan"}
+]
+
+$cards to ""
+
+$cardDeck to ""
+
+>>
+
+
+:: all normal [script]
+(function
+ () {
+	var sources = 
+[
+			"kaleid.png",
+			"large/month1.png",
+			"large/month2.png",
+			"large/month3.png",
+			"large/month4.png",
+			"large/month5.png",
+			"large/month6.png",
+			"large/month7.png",
+			"large/month8.png",
+			"large/month9.png",
+			"large/month10.png",
+			"large/month11.png",
+			"large/month12.png",
+			"small/month1.png",
+			"small/month2.png",
+			"small/month3.png",
+			"small/month4.png",
+			"small/month5.png",
+			"small/month6.png",
+			"small/month7.png",
+			"small/month8.png",
+			"small/month9.png",
+			"small/month10.png",
+			"small/month11.png",
+			"small/month12.png"
+		],
+		docFrag
+ = document.createDocumentFragment(),
+		imgBox  = 
+document.createElement("div");
+	imgBox.id = 
+"imgloader-box";
+	docFrag.appendChild(imgBox);
+	sources.forEach(function
+ (src) {
+		var image = document.createElement("img");
+		image.src =
+ 
+src;
+		imgBox.appendChild(image);
+	});
+	document.body.appendChild(docFrag);
+}());
+
+
+Config.debug
+ = 
+false;
+
+
+$('#ui-bar').remove();
+$(document.head).find('#style-ui-bar').remove();
+
+
+/*!
+ <<replacelink>> macro set for SugarCube 2.x 
+*/
+!function(){"use strict";function 
+showVer(n,notrans){n&&(n.innerHTML="",new 
+Wikifier(n,n.tweecode),n.setAttribute("data-enabled","true"),n.style.display="inline",n.classList.remove("revision-span-out"),notrans||(n.classList.add("revision-span-in"),n.timeout&&clearTimeout(n.timeout),n.timeout=setTimeout(function(){n.classList.remove("revision-span-in"),n=null},20)))}function
+ 
+hideVer(n,notrans){n&&(n.setAttribute("data-enabled","false"),n.classList.remove("revision-span-in"),n.timeout&&clearTimeout(n.timeout),notrans?(n.style.display="none",n.innerHTML="",n=null):(n.classList.add("revision-span-out"),n.timeout=setTimeout(function(){"false"===n.getAttribute("data-enabled")&&(n.classList.remove("revision-span-out"),n.style.display="none",n.innerHTML=""),n=null},1e3)))}function
+ tagcontents(b,starttags,desttags,endtags,k){function 
+tagfound(i,e,endtag){for(var 
+j=0;j<e.length;j++)if(a.indexOf("<<"+e[j]+(endtag?">>":""),i)===i)return
+ e[j]}for(var 
+tg,l=0,c="",a=b.source.slice(k),i=0;i<a.length;i++){if(tg=tagfound(i,starttags))l++;else{if((tg=tagfound(i,desttags,!0))&&0===l)return
+ 
+b.nextMatch=k+i+tg.length+4,[c,tg];if((tg=tagfound(i,endtags,!0))&&(l--,0>l))return
+ null}c+=a.charAt(i)}return null}function 
+revisionSpanHandler(g,e,f,b){function mkspan(vtype){return 
+h=insertElement(m,"span",null,"revision-span 
+"+vtype),h.setAttribute("data-enabled",!1),h.style.display="none",h.tweecode="",h}var
+ 
+becomes,c,cn,m,h,vsn,k=b.source.indexOf(">>",b.matchStart)+2,vsns=[],vtype=e,flen=f.length;if(this.shorthand&&flen)for(;f.length>0;)vsns.push([f.shift(),"insert"===this.flavour?"gains":"becomes"]);else("insert"===this.flavour||"continue"===this.flavour&&"time"===this.trigger)&&vsns.push(["","becomes"]);if("continue"===this.flavour&&flen)b.nextMatch=k+b.source.slice(k).length,vsns.push([b.source.slice(k),vtype]);else{if(becomes=["becomes","gains"],c=tagcontents(b,begintags,becomes.concat(endtags),endtags,k),c&&-1===endtags.indexOf(c[1])){for(;c;)vsns.push(c),c=tagcontents(b,begintags,becomes,endtags,b.nextMatch);c=tagcontents(b,begintags,["/"+e,"end"+e],endtags,b.nextMatch)}if(!c)return
+ void throwError(g,"<<"+e+">>: cannot find a matching close 
+tag");vsns.push(c),"continue"===this.flavour&&(k=b.nextMatch,b.nextMatch=k+b.source.slice(k).length,vsns.push([b.source.slice(k),""]))}for("remove"===this.flavour&&vsns.push(["","becomes"]),cn=0,m=insertElement(g,"span",null,e),m.setAttribute("data-flavour",this.flavour),h=mkspan("initial"),vsn=vsns.shift(),h.tweecode=vsn[0],showVer(h,!0);vsns.length>0;)vsn&&(vtype=vsn[1]),vsn=vsns.shift(),h=mkspan(vtype),h.tweecode=vsn[0];"function"==typeof
+ this.setup&&this.setup(m,g,e,f)}function 
+revisionSetup(m,g,e,f){m.className+=" "+f[0].replace(" ","_")}function 
+keySetup(m,g,e,f){f[0];m.setEventListener("keydown",function l(e){var 
+done=!revise("revise",m);done&&m.removeEventListener("keydown",l)})}function
+ timeSetup(m,g,e,f){function cssTimeUnit(s){if("string"==typeof 
+s){if("ms"===s.slice(-2).toLowerCase())return 
+Number(s.slice(0,-2))||0;if("s"===s.slice(-1).toLowerCase())return 
+1e3*Number(s.slice(0,-1))||0}return throwError(g,"<<"+e+'>>:
+ "'+s+'" is not a valid CSS time unit'),0}var 
+tm=cssTimeUnit(f[0]),s=passage();setTimeout(function 
+timefn(){if(passage()===s){var 
+done=!revise("revise",m);done||setTimeout(timefn,tm)}},tm)}function 
+hoverSetup(m){var 
+fn,noMouseEnter=null!==document.head.onmouseenter,m1=m.children[0],m2=m.children[1],gains=m2.className.indexOf("gains")>-1;m1&&m2&&(m1.onmouseenter=function(e){for(var
+ 
+efp=document.elementFromPoint(e.clientX,e.clientY);efp&&efp!==this;)efp=efp.parentNode;efp&&"false"!==this.getAttribute("data-enabled")&&revise("revise",this.parentNode)},m2.onmouseleave=function(e){for(var
+ 
+efp=document.elementFromPoint(e.clientX,e.clientY);efp&&efp!==this;)efp=efp.parentNode;efp||"false"!==this.getAttribute("data-enabled")&&revise("revert",this.parentNode)},gains&&(m1.onmouseleave=m2.onmouseleave),noMouseEnter&&(fn=function(n){return
+ 
+function(e){event.relatedTarget&&(event.relatedTarget===this||this.compareDocumentPosition(event.relatedTarget)&Node.DOCUMENT_POSITION_CONTAINED_BY)||this[n]()}},m1.onmouseover=fn("onmouseenter"),m2.onmouseout=fn("onmouseleave"),gains&&(m1.onmouseout=m2.onmouseout)),m=null)}function
+ mouseSetup(m){var 
+evt=null===document.head.onmouseenter?"onmouseenter":"onmouseover";m[evt]=function(){var
+ 
+done=!revise("revise",this);done&&(this[evt]=null)},m=null}function
+ linkSetup(m,g,e,f){var 
+l=document.createElement("a"),p=m.parentNode;l.className="link-internal 
+replaceLink",p.insertBefore(l,m),l.insertBefore(m,null),jQuery(l).ariaClick(function(){var
+ 
+done=!1;m&&m.parentNode===this&&(done=!revise("revise",m),scrollWindowTo(m)),done&&(this.parentNode.insertBefore(m,this),this.parentNode.removeChild(this))}),l=null}function
+ visitedSetup(m,g,e,f){var done,sav=State.variables,os="once 
+seen",d=m.firstChild&&("insert"===this.flavour?m.firstChild.nextSibling:m.firstChild).tweecode;if(sav[os]=sav[os]||{},d&&!sav[os].hasOwnProperty(d))sav[os][d]=1;else{for(var
+ 
+i=sav[os][d];i>0&&!done;i--)done=!revise("revise",m,!0);sav[os].hasOwnProperty(d)&&(sav[os][d]+=1)}}function
+ insideDepartingSpan(elem){for(var 
+r=elem.parentNode;!r.classList.contains("passage");){if(r.classList.contains("revision-span-out"))return!0;r=r.parentNode}}function
+ reviseAll(rt,rname){for(var rall=document.querySelectorAll(".passage 
+[data-flavour]."+rname),ret=!1,i=0;i<rall.length;i++)insideDepartingSpan(rall[i])||(ret=revise(rt,rall[i])||ret);return
+ ret}function revise(rt,r,notrans){function 
+doToGainerSpans(n,fn){for(var 
+k=n-1;k>=0&&rc[k+1].classList.contains("gains");k--)fn(rc[k],notrans)}for(var
+ 
+ind2,curr,next,ind=-1,rev="revert"===rt,rnd=rt.indexOf("random")>-1,fl=r.getAttribute("data-flavour"),rc=r.childNodes,cyc="cycle"===fl,rcl=rc.length-1,k=0;rcl>=k;k++)"true"===rc[k].getAttribute("data-enabled")&&(ind=k);rev&&(ind-=1),curr=ind>=0?rc[ind]:cyc?rc[rcl]:null,ind2=ind,rnd&&(ind2=(ind+Math.floor(Math.random()*rcl))%rcl),next=rcl>ind2?rc[ind2+1]:cyc?rc[0]:null;var
+ 
+docurr=rev?showVer:hideVer,donext=rev?hideVer:showVer,currfn=function(){next&&next.classList.contains("gains")&&!rnd||(docurr(curr,notrans),doToGainerSpans(ind,docurr,notrans))},nextfn=function(){donext(next,notrans),rnd&&doToGainerSpans(ind2+1,donext,notrans)};return
+ 
+rev?(nextfn(),currfn()):(currfn(),nextfn()),cyc?!0:rev?ind>0:rcl-1>ind2}if("undefined"==typeof
+ version||"undefined"==typeof 
+version.title||"SugarCube"!==version.title||"undefined"==typeof 
+version.major||version.major<2)throw new 
+Error("<<replacelink>> macro set requires SugarCube 2.0.0 or
+ greater, aborting 
+load");version.extensions.replacelinkMacroSet={major:1,minor:1,revision:7};var
+ 
+begintags=[],endtags=[];[{name:"insertlink",flavour:"insert",trigger:"link",setup:linkSetup},{name:"timedinsert",flavour:"insert",trigger:"time",setup:timeSetup},{name:"insertion",flavour:"insert",trigger:"revisemacro",setup:revisionSetup},{name:"later",flavour:"insert",trigger:"visited",setup:visitedSetup},{name:"keyinsert",flavour:"insert",trigger:"key",setup:keySetup},{name:"replacelink",flavour:"replace",trigger:"link",setup:linkSetup},{name:"timedreplace",flavour:"replace",trigger:"time",setup:timeSetup},{name:"mousereplace",flavour:"replace",trigger:"mouse",setup:mouseSetup},{name:"hoverreplace",flavour:"replace",trigger:"hover",setup:hoverSetup},{name:"revision",flavour:"replace",trigger:"revisemacro",setup:revisionSetup},{name:"keyreplace",flavour:"replace",trigger:"key",setup:keySetup},{name:"timedremove",flavour:"remove",trigger:"time",setup:timeSetup},{name:"mouseremove",flavour:"remove",trigger:"mouse",setup:mouseSetup},{name:"hoverremove",flavour:"remove",trigger:"hover",setup:hoverSetup},{name:"removal",flavour:"remove",trigger:"revisemacro",setup:revisionSetup},{name:"once",flavour:"remove",trigger:"visited",setup:visitedSetup},{name:"keyremove",flavour:"remove",trigger:"key",setup:keySetup},{name:"continuelink",flavour:"continue",trigger:"link",setup:linkSetup},{name:"timedcontinue",flavour:"continue",trigger:"time",setup:timeSetup},{name:"mousecontinue",flavour:"continue",trigger:"mouse",setup:mouseSetup},{name:"keycontinue",flavour:"continue",trigger:"key",setup:keySetup},{name:"cycle",flavour:"cycle",trigger:"revisemacro",setup:revisionSetup},{name:"mousecycle",flavour:"cycle",trigger:"mouse",setup:mouseSetup},{name:"timedcycle",flavour:"cycle",trigger:"time",setup:timeSetup},{name:"keycycle",flavour:"replace",trigger:"key",setup:keySetup}].forEach(function(e){e.handler=revisionSpanHandler,e.shorthand=["link","mouse","hover"].indexOf(e.trigger)>-1,macros[e.name]=e,Macro.tags.register(e.name),begintags.push(e.name),endtags.push("/"+e.name,"end"+e.name)}),macros.revertlink=macros.reviselink=macros.randomiselink=macros.randomizelink={handler:function(a,b,c){function
+ disableLink(l){l.style.display="none"}function 
+enableLink(l){l.style.display="inline"}function 
+updateLink(l){if(l.className.indexOf("random")>-1)return void 
+enableLink(l);for(var 
+cannext,canprev,r,fl,rall=document.querySelectorAll(".passage 
+[data-flavour]."+rname),i=0;i<rall.length;i++)r=rall[i],fl=r.getAttribute("data-flavour"),insideDepartingSpan(r)||("cycle"===fl?cannext=canprev=!0:("false"===r.firstChild.getAttribute("data-enabled")&&(canprev=!0),"false"===r.lastChild.getAttribute("data-enabled")&&(cannext=!0)));var
+ 
+can=l.classList.contains("revert")?canprev:cannext;(can?enableLink:disableLink)(l)}function
+ 
+toggleText(w){w.classList.toggle(rl+"Enabled"),w.classList.toggle(rl+"Disabled"),w.style.display="none"===w.style.display?"inline":"none"}if(c.length<2)return
+ void throwError(a,"<<"+b+">>: insufficient arguments 
+(requires at least 2)");var 
+l,rname,rl="reviseLink",v="",end=!1,out=!1;switch(rname=c.shift().replace("
+ ","_"),l=insertElement(a,"a"),l.className="link-internal "+rl+" 
+"+rl+"_"+rname+" 
+"+b,c.length>1&&"$"===c[0][0]&&(v=c[0].slice(1),c.shift()),c[c.length-1]){case"end":end=!0,c.pop();break;case"out":out=!0,c.pop()}for(var
+ h=State.variables,i=0;i<c.length;i++){var 
+on=i===Math.max(c.indexOf(h[v]),0),d=insertElement(null,"span",null,rl+(on?"En":"Dis")+"abled");on?(h[v]=c[i],l.setAttribute("data-cycle",i)):d.style.display="none",insertText(d,c[i]),l.appendChild(d)}jQuery(l).ariaClick(function(){reviseAll(b,rname);var
+ 
+lall,t=this.childNodes,u=this.getAttribute("data-cycle")-0,m=t.length;if((end||out)&&u>=m-(end?2:1)){if(!end)return
+ void this.parentNode.removeChild(this);var 
+n=this.removeChild(t[u+1]||t[u]);n.className=rl+"End",n.style.display="inline",this.parentNode.replaceChild(n,this)}else
+ 
+toggleText(t[u]),u=(u+1)%m,v&&(h[v]=c[u]),toggleText(t[u]),this.setAttribute("data-cycle",u);lall=document.getElementsByClassName(rl+"_"+rname);for(var
+ 
+i=0;i<lall.length;i++)updateLink(lall[i])}),disableLink(l),setTimeout(function(l){return
+ 
+function(){updateLink(l)}}(l),1),l=null}},macros.mouserevise=macros.hoverrevise={handler:function(a,b,c,d){var
+ 
+endtags=["/"+b,"end"+b],evt=null===window.onmouseenter?"onmouseenter":"onmouseover",t=tagcontents(d,[b],endtags,endtags,d.source.indexOf(">>",d.matchStart)+2);if(t){var
+ rname=c[0].replace(" ","_"),h=insertElement(a,"span",null,"hoverrevise 
+hoverrevise_"+rname),f=function(){var 
+done=!reviseAll("revise",rname);"hoverrevise"!=b&&done&&(this[evt]=null)};new
+ 
+Wikifier(h,t[0]),"hoverrevise"===b?(h.onmouseover=f,h.onmouseout=function(){reviseAll("revert",rname)}):h[evt]=f,h=null}}},Macro.tags.register("mouserevise"),Macro.tags.register("hoverrevise"),macros.instantrevise={handler:function(a,b,c,d){reviseAll("revise",c[0].replace("
+ ","_"))}}}();
+
+
+/*! <<cyclinglink>> macro for SugarCube 
+2.x */
+!function(){"use strict";if("undefined"==typeof 
+version||"undefined"==typeof 
+version.title||"SugarCube"!==version.title||"undefined"==typeof 
+version.major||version.major<2)throw new 
+Error("<<cyclinglink>> macro requires SugarCube 2.0 or 
+greater, aborting 
+load");version.extensions.cyclinglinkMacro={major:3,minor:3,revision:2},macros.cyclinglink={handler:function(a,b,c){function
+ 
+toggleText(w){w.classList.remove("cyclingLinkInit"),w.classList.toggle(rl+"Enabled"),w.classList.toggle(rl+"Disabled"),w.style.display="none"===w.style.display?"inline":"none"}var
+ rl="cyclingLink";switch(c[c.length-1]){case"end":var 
+end=!0;c.pop();break;case"out":var out=!0;c.pop()}var 
+v=null;c.length&&"$"===c[0][0]&&(v=c[0].slice(1),c.shift());var
+ h=State.variables;if(!out||!v||""!==h[v]){var 
+l=insertElement(a,"a");l.className="link-internal 
+cyclingLink",l.setAttribute("data-cycle",0);for(var 
+i=0;i<c.length;i++){var 
+on=i===(v?Math.max(c.indexOf(h[v]),0):0),d=insertElement(null,"span",null,"cyclingLinkInit
+ 
+cyclingLink"+(on?"En":"Dis")+"abled");on?(v&&(h[v]=c[i]),l.setAttribute("data-cycle",i)):d.style.display="none",insertText(d,c[i]),on&&end&&i===c.length-1?l.parentNode.replaceChild(d,l):l.appendChild(d)}jQuery(l).ariaClick(function(){var
+ 
+t=this.childNodes,u=this.getAttribute("data-cycle")-0,m=t.length;if(toggleText(t[u]),u+=1,out&&u===m?v&&(h[v]=""):(u%=m,v&&(h[v]=c[u])),(end||out)&&u===m-(end?1:0)){if(!end)return
+ void this.parentNode.removeChild(this);var 
+n=this.removeChild(t[u]);return 
+n.className=rl+"End",n.style.display="inline",void 
+this.parentNode.replaceChild(n,this)}toggleText(t[u]),this.setAttribute("data-cycle",u)})}}}}();
+
+

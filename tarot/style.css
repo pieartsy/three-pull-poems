@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Courgette', cursive;
+    text-align: center;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cardgap {
+    display: inline-block;
+    width: 13%;
+}
+
+.card
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 33.33%;
+    padding: 2rem;
+    text-align: center;
+}

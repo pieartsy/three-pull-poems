@@ -1,0 +1,57 @@
+::Card Reset
+<<silently>>
+<<set $fool = { name: "The Fool", img: "[img[img/fool.png]]"}>>
+
+<<set $magician = { name: "The Magician", img: "[img[img/magician.png]]"}>>
+
+<<set $priestess = { name: "The High Priestess", img: "[img[img/priestess.png]]"}>>
+
+<<set $empress = { name: "The Empress", img: "[img[img/empress.png]]"}>>
+
+<<set $emperor = { name: "The Emperor", img: "[img[img/emperor.png]]"}>>
+
+<<set $heirophant = { name: "The Heirophant", img: "[img[img/heirophant.png]]"}>>
+
+<<set $lovers = { name: "The Lovers", img: "[img[img/lovers.png]]"}>>
+
+<<set $chariot = { name: "The Chariot", img: "[img[img/chariot.png]]"}>>
+
+<<set $strength = { name: "Strength", img: "[img[img/strength.png]]"}>>
+
+<<set $hermit = { name: "The Hermit", img: "[img[img/hermit.png]]"}>>
+
+<<set $fortune = { name: "Wheel of Fortune", img: "[img[img/fortune.png]]"}>>
+
+<<set $justice = { name: "Justice", img: "[img[img/justice.png]]"}>>
+
+<<set $hangedman = { name: "The Hanged Man", img: "[img[img/hangedman.png]]"}>>
+
+<<set $death = { name: "Death", img: "[img[img/death.png]]"}>>
+
+<<set $temperance = { name: "The Temperance", img: "[img[img/temperance.png]]"}>>
+
+<<set $devil = { name: "The Devil", img: "[img[img/devil.png]]"}>>
+
+<<set $tower = { name: "The Tower", img: "[img[img/tower.png]]"}>>
+
+<<set $star = { name: "The Star", img: "[img[img/star.png]]"}>>
+
+<<set $moon = { name: "The Moon", img: "[img[img/moon.png]]"}>>
+
+<<set $sun = { name: "The Sun", img: "[img[img/sun.png]]"}>>
+
+<<set $judgement = { name: "Judgement", img: "[img[img/judgement.png]]"}>>
+
+<<set $world = { name: "The World", img: "[img[img/world.png]]"}>>
+
+<<set $cards to [$fool, $magician, $priestess, $empress, $emperor, $heirophant, $lovers, $chariot, $strength, $hermit, $fortune, $justice, $hangedman, $death, $temperance, $devil, $tower, $star, $moon, $sun, $judgement, $world]>>
+
+<<set $card1 to 
+$cards.pluck()>>
+
+<<set $card2 to 
+$cards.pluck()>>
+
+<<set $card3 to 
+$cards.pluck()>>
+<</silently>>

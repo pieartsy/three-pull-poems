@@ -1,0 +1,21 @@
+::Start
+!Three Pull Poems\
+
+<<include "Card Reset">>\
+<div class="row">
+@@.column;<h1>Beginning</h1>@@
+@@.column;<h1>Middle</h1>@@
+@@.column;<h1>End</h1>@@
+</div>\
+<div class="row">
+@@.card.column;$card1.img@@
+@@.card.column;$card2.img@@
+@@.card.column;$card3.img@@</div>
+
+[[Again|Start]]
+
+::StoryTitle
+Tarot
+
+:: StorySettings
+ifid:38644b88-37ca-49a1-ade4-c24e03fd7e00
