@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    margin: .1rem;
+    color: #ffddf4;
+}
+
+h1,
+.h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+  text-align: center;
+
+}
+
+body {
+    font-family: 'Courgette', cursive;
+    background-size: cover;
+    color:#ffddf4;
+    background-image: [img[cloth]];    
+}
+
+
+.scene {
+  width: 250px;
+  height: 435px;
+  perspective: 600px;
+}
+
+.cardone {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.cardtwo {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.cardthree {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.cardone.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.cardtwo.is-flipped{
+  transform: rotateY(180deg);
+}
+
+.cardthree.is-flipped{
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffddf4;
+  text-shadow: -1px 0 rgba(28, 26, 48, 0.75), 0 1px rgba(28, 26, 48, 0.75), 1px 0 rgba(28, 26, 48, 0.75), 0 -1px rgba(28, 26, 48, 0.75);
+  text-align: center;
+  font-size: 110%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  width: 100%;
+  background-image: [img[back]];
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.card__face--back img {
+  background-size: cover;
+  transform: rotateY(180deg);
+  max-width: 249px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  text-align: center;
+}
+
+.passage a {
+  color: rgb(213, 78, 218);
+  text-decoration: underline;
+}
+
+.passage a:hover {
+  color: rgb(252, 237, 252);
+}

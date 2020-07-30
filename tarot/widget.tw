@@ -1,8 +1,0 @@
-::widget [widget nobr]
-<<widget "poem">>
-    <<for _card range $cards>>
-        <<if _card == $spread[$args[0]]>>
-            $args[1]
-        <</if>>
-    <</for>>
-<</widget>>

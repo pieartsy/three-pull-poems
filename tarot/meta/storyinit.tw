@@ -1,0 +1,12 @@
+::StoryInit [nobr]
+<<event "click" ".cardone">>
+    <<toggleclass ".cardone" "is-flipped">>
+<</event>>
+
+<<event "click" ".cardtwo">>
+    <<toggleclass ".cardtwo" "is-flipped">>
+<</event>>
+
+<<event "click" ".cardthree">>
+    <<toggleclass ".cardthree" "is-flipped">>
+<</event>>

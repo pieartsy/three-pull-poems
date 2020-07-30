@@ -7,7 +7,7 @@
             "label": "Tweego",
             "type": "shell",
             "isBackground": true,
-            "command": "./tweego -w -o index.html tarot",
+            "command": "tweego -w -o index.html tarot",
             "group": {
                 "kind": "build",
                 "isDefault": true
