@@ -8,7 +8,7 @@ h5,
 h6 {
     text-align: center;
     margin: .1rem;
-    color: #ffddf4;
+    color: #E6CFAE;
 }
 
 h1,
@@ -24,7 +24,7 @@ h2,
 body {
     font-family: 'Courgette', cursive;
     background-size: cover;
-    color:#ffddf4;
+    color:#E6CFAE;
     background-image: [img[cloth]];    
 }
 
@@ -59,7 +59,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffddf4;
+  color: #E6CFAE;
   text-shadow: -1px 0 rgba(28, 26, 48, 0.75), 0 1px rgba(28, 26, 48, 0.75), 1px 0 rgba(28, 26, 48, 0.75), 0 -1px rgba(28, 26, 48, 0.75);
   text-align: center;
   font-size: 105%;
@@ -96,10 +96,10 @@ body {
 }
 
 .passage a {
-  color: rgb(155, 80, 165);
+  color: #e0b67b;
   text-decoration: underline;
 }
 
 .passage a:hover {
-  color: rgb(252, 237, 252);
+  color: #b6aea4;
 }
