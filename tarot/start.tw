@@ -1,42 +1,42 @@
 ::Start
-<<silently>><<include "Card Reset">><</silently>>
+<<silently>><<include "Card Reset">><</silently>>\
 <h1>Three Pull Poems</h1>\
-<div class="row">
-@@.column;<h2>Beginning</h2>@@
-@@.column;<h2>Middle</h2>@@
-@@.column;<h2>End</h2>@@
-</div>
 <<nobr>>
+<div class="flex">
 <div class="row">
     <div class="column">
+    <h2>Beginning</h2>
         <div class="scene">
             <div class="cardone">
-                <div class="card__face card__face--back">$spread[0].img</div>
                 <div class="card__face card__face--front"><<poem "0" "_card.first">></div>
+                <div class="card__face card__face--back">$spread[0].img</div>
             </div>
         </div>
     </div>
     <div class="column">
+    <h2>Middle</h2>
         <div class="scene">
             <div class="cardtwo">
-                <div class="card__face card__face--back">$spread[1].img</div>
                 <div class="card__face card__face--front"><<poem "1" "_card.second">></div>
+                <div class="card__face card__face--back">$spread[1].img</div>
             </div>
         </div>
     </div>
     <div class="column">
+    <h2>End</h2>
         <div class="scene">
             <div class="cardthree">
-                <div class="card__face card__face--back">$spread[2].img</div>
                 <div class="card__face card__face--front"><<poem "2" "_card.third">></div>
+                <div class="card__face card__face--back">$spread[2].img</div>
             </div>
         </div>
     </div>
 </div>
-<</nobr>>
+</div>
+<</nobr>>\
 
 <h2>[[Draw again|Start]]</h2>
-
+<div style ="text-align:center;font-size:1.2rem">Credits: Aster F @pieartsy || Bramble || Jake @rightrevjake</div>
 
 ::StoryTitle
 Tarot
