@@ -2,23 +2,23 @@
 <<silently>>
 <<set $fool = { name: "The Fool", img: "[img[fool]]", first: "At the precipice<br>of wonder, your feet<br>surprise you.", second: "Throw yourself into air's<br>embrace. Tumble through<br>limitless blue.", third: "Your heart is the open<br>road. When the way is<br>lost, will you still whistle?"}>>
 
-<<set $magician = { name: "The Magician", img: "[img[magician]]", first: "Eternity encircles your<br>head, and flowers bloom<br>in your wake.", second: "Touch the horizon.<br>Heaven and earth meet<br>between your fingertips.", third: "The windrose radiates<br>secrets in four.<br>Which will you choose?"}>>
+<<set $magician = { name: "The Magician", img: "[img[magician]]", first: "Eternity encircles your<br>head, and flowers flourish<br>in your wake.", second: "Touch the horizon.<br>Heaven and earth meet<br>between your fingertips.", third: "The windrose radiates<br>secrets in four.<br>Which will you choose?"}>>
 
-<<set $priestess = { name: "The High Priestess", img: "[img[priestess]]", first: "Dream-dressed and<br>crescent-browed, you beckon<br>the night forth.", second: "Crack open the<br>pomegranate moon.<br>Seeds scatter, juice seeps out.", third: "Silver glimmers in the ocean-<br>deep sky. What words<br>do you read there?"}>>
+<<set $priestess = { name: "The High Priestess", img: "[img[priestess]]", first: "Dream-dressed and<br>crescent-browed, you beckon<br>the night forth.", second: "Crack open the<br>pomegranate moon.<br>Seeds scatter, juice seeps out.", third: "Under the silver glimmers of<br>ocean-deep sky, what words<br>do you read?"}>>
 
 <<set $empress = { name: "The Empress", img: "[img[empress]]", first: "empress in first place", second: "On flaxen pillows<br>in the bed of creation,<br>let your head bear fruit.", third: "empress in third place"}>>
 
-<<set $emperor = { name: "The Emperor", img: "[img[emperor]]", first: "emperor in first place", second: "emperor in second place", third: "emperor in third place"}>>
+<<set $emperor = { name: "The Emperor", img: "[img[emperor]]", first: "Adamant-eyed,<br>your gaze cuts cliffs<br>across the aimless clouds.", second: "emperor in second place", third: "emperor in third place"}>>
 
 <<set $heirophant = { name: "The Heirophant", img: "[img[heirophant]]", first: "Your teachings carry<br>weight. You build temples with<br>others' hands.", second: "heirophant in second place", third: "heirophant in third place"}>>
 
-<<set $lovers = { name: "The Lovers", img: "[img[lovers]]", first: "lovers in first place", second: "lovers in second place", third: "A canopy hangs at the edge<br>of the wood. Whose kiss<br>waits here? Whose embrace?"}>>
+<<set $lovers = { name: "The Lovers", img: "[img[lovers]]", first: "lovers in first place", second: "lovers in second place", third: "A canopy hangs at the edge<br>of the wood. Whose kiss<br>will you steal away?"}>>
 
 <<set $chariot = { name: "The Chariot", img: "[img[chariot]]", first: "chariot in first place", second: "Plumes of dust erupt<br>in your thunderous wake.<br>Don't look back. Drive!", third: "chariot in third place"}>>
 
 <<set $strength = { name: "Strength", img: "[img[strength]]", first: "Fervor, fierceness,<br>a force of nature -<br>now with fangs.", second: "strength in second place", third: "strength in third place"}>>
 
-<<set $hermit = { name: "The Hermit", img: "[img[hermit]]", first: "Here in your solitude,<br>each thought sparks,<br>burns like a distant star.", second: "World weary mystery,<br>under your cloak, beam<br>the lantern inward.", third: "Cavernous soul,<br>when plumbing the darkness,<br>what value do you find?"}>>
+<<set $hermit = { name: "The Hermit", img: "[img[hermit]]", first: "Here in your solitude,<br>each thought sparks,<br>burns like a distant star.", second: "World weary mystery,<br>under your cloak, beam<br>the lantern inward.", third: "Cavernous soul,<br>when delving into darkness,<br>what pearls do you find?"}>>
 
 <<set $fortune = { name: "Wheel of Fortune", img: "[img[fortune]]", first: "fortune in first place", second: "fortune in second place", third: "fortune in third place"}>>
 
@@ -26,13 +26,13 @@
 
 <<set $hangedman = { name: "The Hanged Man", img: "[img[hangedman]]", first: "Haloed in restraint,<br>you plant your<br>feet in the heavens.", second: "hanged man in second place", third: "Given time, vines grow round<br>your vertabrae. How long<br>will you wait?"}>>
 
-<<set $death = { name: "Death", img: "[img[death]]", first: "You who float down the river,<br>you castaway, the depths<br>never wanted your name.", second: "Stain your lips on bloody<br>fruit. Let the juice transmute<br>your veins.", third: "death in third place"}>>
+<<set $death = { name: "Death", img: "[img[death]]", first: "You who float down the river,<br>you castaway, the depths<br>never wanted your name.", second: "Stain your lips on bloody<br>fruit. In the husk of before,<br>bloom anew.", third: "death in third place"}>>
 
 <<set $temperance = { name: "Temperance", img: "[img[temperance]]", first: "temperance in first place", second: "temperance in second place", third: "temperance in third place"}>>
 
 <<set $devil = { name: "The Devil", img: "[img[devil]]", first: "devil in first place", second: "devil in second place", third: "Your gut sags with gold<br>and ash, perfume and<br>poison. Will you glut or gag?"}>>
 
-<<set $tower = { name: "The Tower", img: "[img[tower]]", first: "tower in first place", second: "tower in second place", third: "tower in third place"}>>
+<<set $tower = { name: "The Tower", img: "[img[tower]]", first: "Lightning strikes the<br>clouds alight, pitching you<br>into inky unknown.", second: "tower in second place", third: "Foundations crumble in<br>the flash and fire. How will you<br>rebuild?"}>>
 
 <<set $star = { name: "The Star", img: "[img[star]]", first: "Under the twinkling light,<br>there lie footprints<br>in the dewey grass.", second: "The maze path glints silver.<br>Follow, follow, follow, until<br>crowned in cosmos.", third: "Rivulets drip, glisten<br>on your skin. When last<br>did you taste the night?"}>>
 
@@ -40,7 +40,7 @@
 
 <<set $sun = { name: "The Sun", img: "[img[sun]]", first: "Radiant is the seed that<br>crackles and burns, letting<br>light spill out.", second: "Look! The morning<br>blossoms. Glowing petals<br>unfurl across the horizon.", third: "Gold ribbons stream<br>across the sky. Who will<br>you dance with today?"}>>
 
-<<set $judgement = { name: "Judgement", img: "[img[judgement]]", first: "judgement in first place", second: "judgement in second place", third: "judgement in third place"}>>
+<<set $judgement = { name: "Judgement", img: "[img[judgement]]", first: "judgement in first place", second: "judgement in second place", third: "The dead hum<br>wisdom in your ear. What<br>resonates in response?"}>>
 
 <<set $world = { name: "The World", img: "[img[world]]", first: "Wreathed in magic<br>and wonder, you sing victory<br>to the universe.", second: "world in second place", third: "Poised in the circle's heart,<br>you have found perfection's end.<br>Where is its beginning?"}>>
 
